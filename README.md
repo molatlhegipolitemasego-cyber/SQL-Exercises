@@ -1,111 +1,98 @@
-**SQL Analytics Exercises Repository**
-This repository contains a collection of structured SQL exercises designed to demonstrate practical data analysis skills. The project focuses on querying relational databases to extract insights, solve business problems, and build a strong foundation in SQL for data analytics roles.
+# SQL Exercises Repository
 
-**Objectives**
-Practice core SQL concepts
-Analyze structured datasets using queries
-Develop problem-solving skills using real-world scenarios
-Prepare for data analyst and business intelligence roles
+## Project Overview
 
-** Tools & Technologies**
+This repository contains a structured set of SQL exercises completed as **classroom-based, pen-and-paper simulations**. The exercises were designed to develop SQL thinking, query logic, and data analysis skills without the use of a live database system.
 
-SQL (Databricks SQL / Standard SQL)
-Microsoft Excel (for dataset structuring and validation)
-GitHub (version control and project documentation)
+The focus is on building strong conceptual understanding of SQL operations, which are transferable to real-world database environments.
 
-**Project Overview**
 
-The repository includes a series of SQL queries covering different levels of complexity. Each query is designed to answer specific business questions using datasets such as employee records and sales data.
 
-Key focus areas include:
+## Structure of the Exercises
 
-Data filtering and sorting
-Aggregation and grouping
-Conditional logic using CASE statements
-Data ranking and limiting results
-Business-driven query design
+### 1. SELECT & Filtering Statements
 
-**Methodology**
-Understanding the Dataset
-Reviewed dataset structure (columns, data types, relationships)
-Query Development
-Wrote SQL queries to answer specific analytical questions
-Applied SQL clauses such as:
-SELECT
-WHERE
-ORDER BY
-GROUP BY
-HAVING
-LIMIT
-CASE WHEN
-Validation & Testing
-Executed queries in Databricks
-Verified outputs for accuracy
-Insight Generation
-Interpreted query results to derive meaningful insights
-📊 Key SQL Concepts Demonstrated
-🔹 Filtering Data
+* Basic SQL query structure (SELECT)
+* Filtering logic using WHERE clauses
+* Logical operators (AND, OR, NOT)
+* Sorting using ORDER BY
 
-Using WHERE, AND, NOT, and IN to refine datasets
 
-🔹 Sorting Results
+### 2. Aggregate Functions & Grouping
 
-Using ORDER BY to organize data (ascending/descending)
+* COUNT, SUM, AVG, MIN, MAX
+* GROUP BY conceptual application
+* HAVING clause reasoning
+* Data summarisation techniques
 
-🔹 Aggregations
 
-Using functions like:
+### 3. CASE Statements
 
-SUM()
-AVG()
-COUNT()
-🔹 Grouping Data
+* Conditional logic using CASE WHEN
+* Data classification and grouping
+* Derived field creation
+* Logical decision-making in queries
 
-Using GROUP BY to summarize data by categories
+  
+### 4. Joins, UNION, Filtering & Aggregates
 
-🔹 Conditional Logic
+* Understanding relational joins (INNER, LEFT, RIGHT, FULL OUTER)
+* Conceptual merging of datasets using UNION
+* Multi-table reasoning and analysis
+* Combined filtering and aggregation logic
 
-Using CASE WHEN to classify and categorize data
 
-🔹 Advanced Filtering
+### 5. Advanced SQL NULL Functions
 
-Using HAVING to filter aggregated results
+* Conceptual handling of missing or unknown values
+* Understanding IS NULL / IS NOT NULL logic
+* COALESCE for value substitution scenarios
+* NULLIF for comparison-based logic
+* Applied through **pen-and-paper SQL simulations**
 
-📈 Example Queries
 
-1. Filtering and Sorting Data
 
-SELECT *
-FROM employees
-WHERE department NOT IN ('Finance')
-  AND salary > 50000
-ORDER BY hire_date ASC;
+### 6. Advanced SQL DATE FUNCTIONS
 
-2. Aggregation with GROUP BY
+* Date logic and interpretation
+* Extracting time components (year, month, day)
+* Understanding date-based analysis scenarios
+* Time-series reasoning using SQL concepts
 
-SELECT department,
-       AVG(salary) AS avg_salary
-FROM employees
-GROUP BY department;
 
-3. Conditional Logic with CASE
+## Purpose of the Exercises
 
-SELECT student_id,
-       days_present * 100.0 / total_days AS attendance_percentage,
-       CASE
-           WHEN days_present * 100.0 / total_days >= 90 THEN 'Excellent'
-           WHEN days_present * 100.0 / total_days BETWEEN 75 AND 89.99 THEN 'Good'
-           ELSE 'Needs Improvement'
-       END AS attendance_status
-FROM attendance;
+* Develop SQL logical thinking and query structuring skills
+* Strengthen understanding of relational database concepts
+* Build readiness for real-world SQL environments
+* Improve analytical and problem-solving ability in data contexts
 
-**💡 Key Learnings**
-Improved ability to write efficient SQL queries
-Gained experience in transforming raw data into insights
-Strengthened understanding of database querying for business use cases
 
-**Future Improvements**
-Add more complex joins (INNER, LEFT, RIGHT joins)
-Incorporate real-world datasets
-Build dashboards using Power BI or Tableau
-Optimize queries for performance
+## Tools Used
+
+* Pen-and-paper SQL simulations (classroom-based exercises)
+* Instructor-guided datasets and scenarios
+* Theoretical SQL frameworks and examples
+
+
+## Key Learning Outcome
+
+* Strong conceptual understanding of SQL querying
+* Ability to interpret and construct logical database queries
+* Preparedness for transitioning into real database systems
+* Foundational skills for data analytics and econometrics work
+
+
+## Author
+
+**Polite Masego Molatlhegi**
+
+Agricultural Economist and Data Analyst
+Skills: SQL, R, STATA, SPSS, Data Analysis, Econometrics, Research, Business Strategy
+
+
+
+
+
+
+
